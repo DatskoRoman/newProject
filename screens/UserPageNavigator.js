@@ -13,6 +13,7 @@ const UserPageNavigator = (props) => {
             <StackNavigator.Screen name={'users'} component={Users}/>
             <StackNavigator.Screen name={'uDetails'} component={UserDetails}/>
         </StackNavigator.Navigator>
+
     )
 };
 

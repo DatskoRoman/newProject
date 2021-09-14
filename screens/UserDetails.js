@@ -14,3 +14,4 @@ const UserDetails = (props) => {
 export default UserDetails;
 
 let styles = StyleSheet.create({});
+

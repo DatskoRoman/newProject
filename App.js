@@ -16,7 +16,7 @@ export default function App() {
   return (
       <NavigationContainer>
           <BottomTabNavigator.Navigator tabBarOption={{tabStyle:{justifyContent:'center', alignItems:'center'}}}>
-              <BottomTabNavigator.Screen name={'users'} component={UserPageNavigator}/>
+              <BottomTabNavigator.Screen name={'users'} component={UserPageNavigator} options={{ headerShown: false }}/>
               <BottomTabNavigator.Screen name={'home'} component={Home}/>
           </BottomTabNavigator.Navigator>
 
