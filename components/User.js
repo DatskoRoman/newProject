@@ -1,11 +1,21 @@
-import {Text, View} from "react-native";
+import {Text, View, Button} from "react-native";
 import React from 'react';
 import { StyleSheet } from 'react-native';
 
+const User = (props) => {
+    let {item, nav:{navigate}} = props;
+    console.log(props);
 
-const User = ({item}) => {
+    let onPress = () => {
+
+    navigate ('uDetails', {data:item});
+
+    };
+
+
     return <View style={[styles.userBox, styles.margins, styles.sizes]}>
         <Text style={[styles.align]}> {item.name}</Text>
+        <Button title={'user details'} onPress={onPress}/>
         </View>;
 }
 
